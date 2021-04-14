@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+     <link rel="stylesheet" type="text/css" href="C:\Users\ASUS\OneDrive\Desktop\moveinsync\mystyle.css">
+</head>
+
+
+<body>
+<script src="C:\Users\ASUS\OneDrive\Desktop\moveinsync\myscripts.js">
+</script>
+    <h1>Users List</h1>
+    <hr>
+
+    <table id="myTable">
+        <tr id="header">
+            <th>Name</th>
+            <th>Id</th>
+            <th>City</th>
+            <th>Degree</th>
+            <th>Timestamp</th>
+        </tr>
+       
+    </table>
+
+
+<button class="open-button" onclick="openForm()">Add user</button>
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1>Add user</h1>
+
+    <label ><b>Name</b></label>
+    <input type="text" id="name1" name="name1" placeholder="Enter Name"  required>
+    <br>
+     <label><b>Degree</b></label>
+    <input type="text" id="degree" name="degree" placeholder="Enter Degree" required>
+    <br>
+<label><b>City</b></label>
+<select id="city" name="city">
+  <option value="Bangaluru">Bangaluru</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Mumbai">Mumbai</option>
+</select>
+ 
+
+<br><br>
+    <button type="button" onclick="myFunction()" class="btn">Save</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+</body>
+
+</html>
